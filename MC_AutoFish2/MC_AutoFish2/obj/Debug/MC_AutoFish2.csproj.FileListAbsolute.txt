@@ -1,0 +1,11 @@
+D:\Mycode\MC_AutoFish2\MC_AutoFish2\bin\Debug\MC_AutoFish2.exe.config
+D:\Mycode\MC_AutoFish2\MC_AutoFish2\bin\Debug\MC_AutoFish2.exe
+D:\Mycode\MC_AutoFish2\MC_AutoFish2\bin\Debug\MC_AutoFish2.pdb
+D:\Mycode\MC_AutoFish2\MC_AutoFish2\obj\Debug\MC_AutoFish2.csproj.AssemblyReference.cache
+D:\Mycode\MC_AutoFish2\MC_AutoFish2\obj\Debug\MC_AutoFish2.csproj.SuggestedBindingRedirects.cache
+D:\Mycode\MC_AutoFish2\MC_AutoFish2\obj\Debug\MC_AutoFish2.Form1.resources
+D:\Mycode\MC_AutoFish2\MC_AutoFish2\obj\Debug\MC_AutoFish2.Properties.Resources.resources
+D:\Mycode\MC_AutoFish2\MC_AutoFish2\obj\Debug\MC_AutoFish2.csproj.GenerateResource.cache
+D:\Mycode\MC_AutoFish2\MC_AutoFish2\obj\Debug\MC_AutoFish2.csproj.CoreCompileInputs.cache
+D:\Mycode\MC_AutoFish2\MC_AutoFish2\obj\Debug\MC_AutoFish2.exe
+D:\Mycode\MC_AutoFish2\MC_AutoFish2\obj\Debug\MC_AutoFish2.pdb
