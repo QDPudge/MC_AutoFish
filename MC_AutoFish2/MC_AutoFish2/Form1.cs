@@ -6,8 +6,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
+using System.Text; 
 using System.Windows.Forms;
 
 namespace MC_AutoFish2
@@ -47,7 +46,7 @@ namespace MC_AutoFish2
         private void button1_Click(object sender, EventArgs e)
         {
 
-            var ps = Process.GetProcessesByName("minecraft").ToList();
+            var ps = Process.GetProcessesByName("javaw").ToList();
             if (ps == null || ps.Count == 0) { MessageBox.Show("没有检测到游戏，请开启游戏后重试"); return; }
             gofishing = !gofishing;
             if (gofishing) {
@@ -75,6 +74,8 @@ namespace MC_AutoFish2
                 gofishing = !gofishing; ; //满足条件后执行事件
                 groupBox1.Enabled = !gofishing;
                 timer1.Enabled = false;
+                timer2.Enabled = false;
+                timer3.Enabled = false;
             }
         }
 
@@ -82,13 +83,12 @@ namespace MC_AutoFish2
         {
 
             //连续两次点击--
-            mouse_event(MOUSEEVENTF_LEFTDOWN | MOUSEEVENTF_LEFTUP, 0, 0, 0, 0); 
+            mouse_event(MOUSEEVENTF_RIGHTDOWN | MOUSEEVENTF_RIGHTUP, 0, 0, 0, 0); 
             if (checkBox1.Checked)
             {
                 Random RA = new Random();
                 timer1.Interval = RA.Next(Convert.ToInt32(textBox1.Text), (Convert.ToInt32(textBox1.Text) + 500));
-            }
-            Console.WriteLine(timer1.Interval.ToString());
+            } 
         }
 
         private void timer2_Tick(object sender, EventArgs e)
@@ -121,7 +121,7 @@ namespace MC_AutoFish2
 
         private void timer3_Tick(object sender, EventArgs e)
         {
-            var ps = Process.GetProcessesByName("minecraft").ToList();
+            var ps = Process.GetProcessesByName("javaw").ToList();
             if (ps == null || ps.Count == 0) { MessageBox.Show("检测到游戏已关闭，请查看账号状态！");
 
                 richTextBox1.Add("封号警告：检测到游戏已关闭，请查看账号状态！，" + DateTime.Now.ToString("MM-dd HH:mm:ss"));
